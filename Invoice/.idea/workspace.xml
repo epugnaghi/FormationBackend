@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/IInvoiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/IInvoiceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/IInvoiceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceControllerMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceControllerMichel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDaoMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDaoMichel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceServiceMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceServiceMichel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713785379323</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <option name="closed" value="true" />
+      <created>1713796977119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713796977119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

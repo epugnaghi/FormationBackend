@@ -7,7 +7,7 @@ import java.util.List;
 
 public class InvoiceDaoMichel implements IInvoiceDao
 {
-    private static final List<Invoice> listInvoice = new ArrayList<Invoice>();
+    private static final List<Invoice> listInvoice = new ArrayList<>();
 
     public void create(Invoice invoice)
     {
