@@ -1,13 +1,11 @@
 package com.ep;
 
+import com.ep.controller.IInvoiceController;
 import com.ep.controller.InvoiceController;
 import com.ep.controller.InvoiceControllerMichel;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- */
 public class App
 {
     public static void main(String[] args)
@@ -18,14 +16,14 @@ public class App
 
         if (config == 1)
         {
-            InvoiceController invoiceController = new InvoiceController();
+            IInvoiceController invoiceController = new InvoiceController();
 
-            invoiceController.createInvoiceControllerUsingConsole();
+            invoiceController.createInvoice();
         } else if (config == 2)
         {
-            InvoiceControllerMichel invoiceControllerMichel = new InvoiceControllerMichel();
+            IInvoiceController invoiceControllerMichel = new InvoiceControllerMichel();
 
-            invoiceControllerMichel.createInvoiceControllerUsingWebUI();
+            invoiceControllerMichel.createInvoice();
         }
     }
 }

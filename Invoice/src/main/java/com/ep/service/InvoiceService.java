@@ -1,12 +1,12 @@
 package com.ep.service;
 
-import com.ep.dao.InvoiceDao;
+import com.ep.dao.IInvoiceDao;
 import com.ep.entity.Invoice;
 
-public class InvoiceService
+public class InvoiceService implements IInvoiceService
 {
     private static long lastNumber = 0L;
-    private final InvoiceDao invoiceDao = new InvoiceDao();
+    private final IInvoiceDao invoiceDao = null;//new InvoiceDao();
 
     public void createInvoice(Invoice invoice)
     {

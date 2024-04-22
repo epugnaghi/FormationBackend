@@ -1,13 +1,16 @@
 package com.ep.controller;
 
 import com.ep.entity.Invoice;
+import com.ep.service.IInvoiceService;
 import com.ep.service.InvoiceService;
 
 import java.util.Scanner;
 
-public class InvoiceController
+public class InvoiceController implements IInvoiceController
 {
-    public void createInvoiceControllerUsingConsole()
+    private IInvoiceService invoiceService = null;
+
+    public void createInvoice()
     {
         System.out.println("Name : ");
         Scanner sc = new Scanner(System.in);
@@ -17,7 +20,7 @@ public class InvoiceController
         Invoice invoice = new Invoice();
         invoice.setCustomerName(name);
 
-        InvoiceService invoiceService = null;
+        //IInvoiceService invoiceService = null;
         invoiceService = new InvoiceService();
         invoiceService.createInvoice(invoice);
     }
