@@ -2,11 +2,21 @@ package com.ep.controller;
 
 import com.ep.entity.Invoice;
 import com.ep.service.IInvoiceService;
-import com.ep.service.InvoiceServiceMichel;
 
 public class InvoiceControllerMichel implements IInvoiceController
 {
     private IInvoiceService invoiceService = null;
+
+    public IInvoiceService getInvoiceService()
+    {
+        return invoiceService;
+    }
+
+    public void setInvoiceService(IInvoiceService invoiceService)
+    {
+        this.invoiceService = invoiceService;
+    }
+
 
     public void createInvoice()
     {
@@ -16,7 +26,7 @@ public class InvoiceControllerMichel implements IInvoiceController
         invoice.setCustomerName(name);
 
         //IInvoiceService invoiceService = null;
-        invoiceService = new InvoiceServiceMichel();
+        //invoiceService = new InvoiceServiceMichel();
         invoiceService.createInvoice(invoice);
     }
 

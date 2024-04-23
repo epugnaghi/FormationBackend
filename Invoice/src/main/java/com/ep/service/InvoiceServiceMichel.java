@@ -6,7 +6,7 @@ import com.ep.entity.Invoice;
 public class InvoiceServiceMichel implements IInvoiceService
 {
     private static long lastNumber = 112L;
-    private final IInvoiceDao invoiceDao = null;//new InvoiceDaoMichel();
+    private IInvoiceDao invoiceDao = null;
 
     public void createInvoice(Invoice invoice)
     {
@@ -15,5 +15,15 @@ public class InvoiceServiceMichel implements IInvoiceService
         invoice.setNumber("INV_" + lastNumber);
 
         invoiceDao.create(invoice);
+    }
+
+    public IInvoiceDao getInvoiceDao()
+    {
+        return invoiceDao;
+    }
+
+    public void setInvoiceDao(IInvoiceDao invoiceDao)
+    {
+        this.invoiceDao = invoiceDao;
     }
 }
