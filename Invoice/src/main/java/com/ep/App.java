@@ -1,15 +1,10 @@
 package com.ep;
 
-import com.ep.controller.ControllerInvoiceConsole;
-import com.ep.controller.ControllerInvoiceWeb;
 import com.ep.controller.IControllerInvoice;
-import com.ep.dao.DaoInvoiceDB;
-import com.ep.dao.DaoInvoiceMemory;
 import com.ep.dao.IDaoInvoice;
 import com.ep.service.IServiceInvoice;
-import com.ep.service.ServiceInvoiceNumber;
-import com.ep.service.ServiceInvoicePrefix;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class App
@@ -20,9 +15,9 @@ public class App
         Scanner sc = new Scanner(System.in);
         int config = sc.nextInt();
 
-        String controllerClassName = "";
-        String serviceClassName = "";
-        String daoClassName = "";
+        String controllerClassName;
+        String serviceClassName;
+        String daoClassName;
         IControllerInvoice invoiceController = null;
         IServiceInvoice invoiceService = null;
         IDaoInvoice invoiceDao = null;
@@ -55,42 +50,16 @@ public class App
         }
         catch (Exception e)
         {
-            System.out.println(e.getStackTrace());
+            System.out.println(Arrays.toString(e.getStackTrace()));
         }
 
-
-        invoiceController.setInvoiceService(invoiceService);
-        invoiceService.setInvoiceDao(invoiceDao);
-        invoiceController.createInvoice();
-
-
-    }
-
-    public static void main_old(String[] args)
-    {
-        System.out.println("Num Config : ");
-        Scanner sc = new Scanner(System.in);
-        int config = sc.nextInt();
-
-        if (config == 1)
-        {
-            IControllerInvoice invoiceController = new ControllerInvoiceConsole();
-            IServiceInvoice invoiceService = new ServiceInvoiceNumber();
-            IDaoInvoice invoiceDao = new DaoInvoiceMemory();
-
+        if (invoiceController != null)
             invoiceController.setInvoiceService(invoiceService);
-            invoiceService.setInvoiceDao(invoiceDao);
-            invoiceController.createInvoice();
-        }
-        else if (config == 2)
-        {
-            IControllerInvoice invoiceController = new ControllerInvoiceWeb();
-            IServiceInvoice invoiceService = new ServiceInvoicePrefix();
-            IDaoInvoice invoiceDao = new DaoInvoiceDB();
 
-            invoiceController.setInvoiceService(invoiceService);
+        if (invoiceService != null)
             invoiceService.setInvoiceDao(invoiceDao);
+
+        if (invoiceController != null)
             invoiceController.createInvoice();
-        }
     }
 }
