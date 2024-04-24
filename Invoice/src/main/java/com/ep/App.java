@@ -8,6 +8,7 @@ import com.ep.dao.DaoInvoiceMemory;
 import com.ep.dao.IDaoInvoice;
 import com.ep.service.IServiceInvoice;
 import com.ep.service.ServiceInvoiceNumber;
+import com.ep.service.ServiceInvoicePrefix;
 
 import java.util.Scanner;
 
@@ -32,7 +33,7 @@ public class App
         else if (config == 2)
         {
             IControllerInvoice invoiceController = new ControllerInvoiceWeb();
-            IServiceInvoice invoiceService = new ServiceInvoiceNumber();
+            IServiceInvoice invoiceService = new ServiceInvoicePrefix();
             IDaoInvoice invoiceDao = new DaoInvoiceDB();
 
             invoiceController.setInvoiceService(invoiceService);
