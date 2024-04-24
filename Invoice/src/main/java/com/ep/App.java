@@ -20,6 +20,52 @@ public class App
         Scanner sc = new Scanner(System.in);
         int config = sc.nextInt();
 
+        String controllerClassName = "";
+        String serviceClassName = "";
+        String daoClassName = "";
+        IControllerInvoice invoiceController = null;
+        IServiceInvoice invoiceService = null;
+        IDaoInvoice invoiceDao = null;
+
+        if (config == 1)
+        {
+            controllerClassName = "com.ep.controller.ControllerInvoiceConsole";
+            serviceClassName = "com.ep.service.ServiceInvoiceNumber";
+            daoClassName = "com.ep.dao.DaoInvoiceMemory";
+        }
+        else if (config == 2)
+        {
+            controllerClassName = "com.ep.controller.ControllerInvoiceWeb";
+            serviceClassName = "com.ep.service.ServiceInvoicePrefix";
+            daoClassName = "com.ep.dao.DaoInvoiceDB";
+        }
+
+
+        try
+        {
+            invoiceController = (IControllerInvoice) Class.forName(controllerClassName).getDeclaredConstructor().newInstance();
+            invoiceService = (IServiceInvoice) Class.forName(serviceClassName).getDeclaredConstructor().newInstance();
+            invoiceDao = (IDaoInvoice) Class.forName(daoClassName).getDeclaredConstructor().newInstance();
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getStackTrace());
+        }
+
+
+        invoiceController.setInvoiceService(invoiceService);
+        invoiceService.setInvoiceDao(invoiceDao);
+        invoiceController.createInvoice();
+
+
+    }
+
+    public static void main_old(String[] args)
+    {
+        System.out.println("Num Config : ");
+        Scanner sc = new Scanner(System.in);
+        int config = sc.nextInt();
+
         if (config == 1)
         {
             IControllerInvoice invoiceController = new ControllerInvoiceConsole();
