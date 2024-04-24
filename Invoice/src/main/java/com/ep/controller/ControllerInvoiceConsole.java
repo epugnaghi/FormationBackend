@@ -1,20 +1,20 @@
 package com.ep.controller;
 
 import com.ep.entity.Invoice;
-import com.ep.service.IInvoiceService;
+import com.ep.service.IServiceInvoice;
 
 import java.util.Scanner;
 
-public class InvoiceControllerConsole implements IInvoiceController
+public class ControllerInvoiceConsole implements IControllerInvoice
 {
-    private IInvoiceService invoiceService = null;
+    private IServiceInvoice invoiceService = null;
 
-    public IInvoiceService getInvoiceService()
+    public IServiceInvoice getInvoiceService()
     {
         return invoiceService;
     }
 
-    public void setInvoiceService(IInvoiceService invoiceService)
+    public void setInvoiceService(IServiceInvoice invoiceService)
     {
         this.invoiceService = invoiceService;
     }

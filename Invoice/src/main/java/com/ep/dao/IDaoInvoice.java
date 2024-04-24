@@ -2,7 +2,7 @@ package com.ep.dao;
 
 import com.ep.entity.Invoice;
 
-public interface IInvoiceDao
+public interface IDaoInvoice
 {
     void create(Invoice invoice);
 }

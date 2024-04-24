@@ -1,14 +1,14 @@
 package com.ep;
 
-import com.ep.controller.IInvoiceController;
-import com.ep.controller.InvoiceControllerConsole;
-import com.ep.controller.InvoiceControllerWeb;
-import com.ep.dao.IInvoiceDao;
-import com.ep.dao.InvoiceDaoDB;
-import com.ep.dao.InvoiceDaoMemory;
-import com.ep.service.IInvoiceService;
-import com.ep.service.InvoiceServiceINV_Number;
-import com.ep.service.InvoiceServiceNumber;
+import com.ep.controller.ControllerInvoiceConsole;
+import com.ep.controller.ControllerInvoiceWeb;
+import com.ep.controller.IControllerInvoice;
+import com.ep.dao.DaoInvoiceDB;
+import com.ep.dao.DaoInvoiceMemory;
+import com.ep.dao.IDaoInvoice;
+import com.ep.service.IServiceInvoice;
+import com.ep.service.ServiceInvoiceINV_Number;
+import com.ep.service.ServiceInvoiceNumber;
 
 import java.util.Scanner;
 
@@ -22,9 +22,9 @@ public class App
 
         if (config == 1)
         {
-            IInvoiceController invoiceController = new InvoiceControllerConsole();
-            IInvoiceService invoiceService = new InvoiceServiceNumber();
-            IInvoiceDao invoiceDao = new InvoiceDaoMemory();
+            IControllerInvoice invoiceController = new ControllerInvoiceConsole();
+            IServiceInvoice invoiceService = new ServiceInvoiceNumber();
+            IDaoInvoice invoiceDao = new DaoInvoiceMemory();
 
             invoiceController.setInvoiceService(invoiceService);
             invoiceService.setInvoiceDao(invoiceDao);
@@ -32,9 +32,9 @@ public class App
         }
         else if (config == 2)
         {
-            IInvoiceController invoiceController = new InvoiceControllerWeb();
-            IInvoiceService invoiceService = new InvoiceServiceINV_Number();
-            IInvoiceDao invoiceDao = new InvoiceDaoDB();
+            IControllerInvoice invoiceController = new ControllerInvoiceWeb();
+            IServiceInvoice invoiceService = new ServiceInvoiceINV_Number();
+            IDaoInvoice invoiceDao = new DaoInvoiceDB();
 
             invoiceController.setInvoiceService(invoiceService);
             invoiceService.setInvoiceDao(invoiceDao);
