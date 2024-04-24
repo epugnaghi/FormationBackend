@@ -39,6 +39,12 @@ public class App
             serviceClassName = "com.ep.service.ServiceInvoicePrefix";
             daoClassName = "com.ep.dao.DaoInvoiceDB";
         }
+        else
+        {
+            controllerClassName = "com.ep.controller.ControllerInvoiceConsole";
+            serviceClassName = "com.ep.service.ServiceInvoiceNumber";
+            daoClassName = "com.ep.dao.DaoInvoiceMemory";
+        }
 
 
         try
