@@ -5,7 +5,7 @@ import com.ep.entity.Invoice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InvoiceDao implements IInvoiceDao
+public class InvoiceDaoDB implements IInvoiceDao
 {
     private static final List<Invoice> listInvoice = new ArrayList<>();
 

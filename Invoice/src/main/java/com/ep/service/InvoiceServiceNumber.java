@@ -3,16 +3,16 @@ package com.ep.service;
 import com.ep.dao.IInvoiceDao;
 import com.ep.entity.Invoice;
 
-public class InvoiceServiceMichel implements IInvoiceService
+public class InvoiceServiceNumber implements IInvoiceService
 {
-    private static long lastNumber = 112L;
+    private static long lastNumber = 0L;
     private IInvoiceDao invoiceDao = null;
 
     public void createInvoice(Invoice invoice)
     {
         lastNumber++;
 
-        invoice.setNumber("INV_" + lastNumber);
+        invoice.setNumber(String.valueOf(lastNumber));
 
         invoiceDao.create(invoice);
     }
@@ -26,4 +26,5 @@ public class InvoiceServiceMichel implements IInvoiceService
     {
         this.invoiceDao = invoiceDao;
     }
+
 }
