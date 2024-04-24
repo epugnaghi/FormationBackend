@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="git toolbox inline blame&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceControllerConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceControllerMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDaoDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDaoMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/InvoiceDaoMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceServiceMichel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/InvoiceServiceINV_Number.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoiceINV_Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoicePrefix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713944001496</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="git toolbox inline blame&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1713956728211</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713956728211</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1713956853737</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713956853737</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +198,8 @@
     <MESSAGE value="git toolbox inline blame" />
     <MESSAGE value="update" />
     <MESSAGE value="git toolbox inline blame&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="git toolbox inline blame&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
+    <MESSAGE value="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
