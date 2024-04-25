@@ -19,6 +19,7 @@ public class ServiceInvoiceNumber implements IServiceInvoice
 
     public IDaoInvoice getInvoiceDao()
     {
+
         return invoiceDao;
     }
 
