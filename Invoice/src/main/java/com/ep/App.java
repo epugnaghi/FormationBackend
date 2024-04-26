@@ -11,7 +11,6 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IControllerInvoice invoiceController = context.getBean(IControllerInvoice.class);
 
-        if (invoiceController != null)
-            invoiceController.createInvoice();
+        invoiceController.createInvoice();
     }
 }

@@ -13,5 +13,4 @@
     <bean id="controllerWeb" class="com.ep.controller.ControllerInvoiceConsole">
         <property name="invoiceService" ref="servicePrefix"/>
     </bean>
-
 </beans>
