@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714140931979</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1714141106870</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714141106870</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
