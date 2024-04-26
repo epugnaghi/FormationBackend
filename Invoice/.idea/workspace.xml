@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714141106870</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1714141500908</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714141500908</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
