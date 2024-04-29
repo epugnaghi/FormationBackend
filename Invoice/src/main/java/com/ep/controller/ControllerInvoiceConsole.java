@@ -2,11 +2,13 @@ package com.ep.controller;
 
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Scanner;
 
 public class ControllerInvoiceConsole implements IControllerInvoice
 {
+    @Autowired
     private IServiceInvoice invoiceService = null;
 
     public IServiceInvoice getInvoiceService()
@@ -14,6 +16,7 @@ public class ControllerInvoiceConsole implements IControllerInvoice
         return invoiceService;
     }
 
+    @Autowired
     public void setInvoiceService(IServiceInvoice invoiceService)
     {
         this.invoiceService = invoiceService;

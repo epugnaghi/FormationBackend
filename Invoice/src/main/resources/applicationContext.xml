@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="com.ep.service.ServiceInvoicePrefix"> <!-- autowire="byName">-->
-        <!--<property name="invoiceDao" ref="invoiceDao"/>-->
-        <property name="lastNumber" value="113"/>
-        <property name="prefix" value="ep_"/>
-    </bean>
+    <context:annotation-config/>
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <bean class="com.ep.service.ServiceInvoicePrefix"/>
 
     <bean class="com.ep.dao.DaoInvoiceMemory"/>
 
-    <bean class="com.ep.controller.ControllerInvoiceConsole"> <!-- autowire="byName">-->
-        <!--<property name="invoiceService" ref="invoiceService"/>-->
+    <bean class="com.ep.controller.ControllerInvoiceConsole">
     </bean>
 </beans>
