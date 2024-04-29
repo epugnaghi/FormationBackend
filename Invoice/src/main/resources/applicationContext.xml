@@ -4,8 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="servicePrefix" class="com.ep.service.ServiceInvoiceNumber">
+    <bean id="servicePrefix" class="com.ep.service.ServiceInvoicePrefix">
         <property name="invoiceDao" ref="daoMemory"/>
+        <property name="lastNumber" value="113"/>
+        <property name="prefix" value="ep_"/>
     </bean>
 
     <bean id="daoMemory" class="com.ep.dao.DaoInvoiceMemory"/>

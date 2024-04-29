@@ -5,7 +5,7 @@ import com.ep.entity.Invoice;
 
 public class ServiceInvoiceNumber implements IServiceInvoice
 {
-    private static long lastNumber = 0L;
+    private long lastNumber = 0L;
     private IDaoInvoice invoiceDao = null;
 
     public void createInvoice(Invoice invoice)
