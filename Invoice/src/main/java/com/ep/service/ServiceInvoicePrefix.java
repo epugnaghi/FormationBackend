@@ -40,13 +40,11 @@ public class ServiceInvoicePrefix implements IServiceInvoice
 
     public IDaoInvoice getInvoiceDao()
     {
-
         return invoiceDao;
     }
 
     public void setInvoiceDao(IDaoInvoice invoiceDao)
     {
-
         this.invoiceDao = invoiceDao;
     }
 

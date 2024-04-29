@@ -2,17 +2,17 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byType">
 
-    <bean id="servicePrefix" class="com.ep.service.ServiceInvoicePrefix">
-        <property name="invoiceDao" ref="daoMemory"/>
+    <bean class="com.ep.service.ServiceInvoicePrefix"> <!-- autowire="byName">-->
+        <!--<property name="invoiceDao" ref="invoiceDao"/>-->
         <property name="lastNumber" value="113"/>
         <property name="prefix" value="ep_"/>
     </bean>
 
-    <bean id="daoMemory" class="com.ep.dao.DaoInvoiceMemory"/>
+    <bean class="com.ep.dao.DaoInvoiceMemory"/>
 
-    <bean id="controllerWeb" class="com.ep.controller.ControllerInvoiceConsole">
-        <property name="invoiceService" ref="servicePrefix"/>
+    <bean class="com.ep.controller.ControllerInvoiceConsole"> <!-- autowire="byName">-->
+        <!--<property name="invoiceService" ref="invoiceService"/>-->
     </bean>
 </beans>
