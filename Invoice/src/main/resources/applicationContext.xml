@@ -8,7 +8,7 @@
 
     <context:annotation-config/>
     <context:property-placeholder location="classpath:application.properties"/>
-    <context:component-scan base-package="com.ep.controller.web"/>
-    <context:component-scan base-package="com.ep.service.prefix"/>
-    <context:component-scan base-package="com.ep.repository.db"/>
+    <context:component-scan base-package="com.ep.controller.console"/>
+    <context:component-scan base-package="com.ep.service.number"/>
+    <context:component-scan base-package="com.ep.repository.memory"/>
 </beans>

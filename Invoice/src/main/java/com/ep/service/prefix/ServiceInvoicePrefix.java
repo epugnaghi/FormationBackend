@@ -56,11 +56,4 @@ public class ServiceInvoicePrefix implements IServiceInvoice
         return invoiceRepository;
     }
 
-    /*
-    @Autowired
-    public void setInvoiceRepository(IRepositoryInvoice invoiceRepository)
-    {
-        this.invoiceRepository = invoiceRepository;
-    }
-    */
 }

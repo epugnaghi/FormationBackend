@@ -20,19 +20,12 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         return invoiceService;
     }
 
-    /*@Autowired
-    public void setInvoiceService(IServiceInvoice invoiceService)
-    {
-        this.invoiceService = invoiceService;
-    }*/
-
-
     public void createInvoice()
     {
         String name = "lukas";
 
         Invoice invoice = new Invoice();
-        invoice.setCustomerName(name);
+        invoice.setCustomerName("Web-" + name);
 
         invoiceService.createInvoice(invoice);
     }

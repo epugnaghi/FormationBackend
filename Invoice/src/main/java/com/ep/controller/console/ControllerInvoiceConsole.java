@@ -1,5 +1,6 @@
-package com.ep.controller;
+package com.ep.controller.console;
 
+import com.ep.controller.IControllerInvoice;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
@@ -30,7 +31,7 @@ public class ControllerInvoiceConsole implements IControllerInvoice
 
     public void createInvoice()
     {
-        System.out.println("Name : ");
+        System.out.println("Console-" + "Name : ");
         Scanner sc = new Scanner(System.in);
 
         String name = sc.nextLine();
