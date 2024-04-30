@@ -3,9 +3,11 @@ package com.ep.controller;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
+@Controller
 public class ControllerInvoiceConsole implements IControllerInvoice
 {
     @Autowired
