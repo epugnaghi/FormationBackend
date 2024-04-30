@@ -1,26 +1,30 @@
-package com.ep.controller;
+package com.ep.controller.web;
 
+import com.ep.controller.IControllerInvoice;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class ControllerInvoiceWeb implements IControllerInvoice
 {
-    @Autowired
-    private IServiceInvoice invoiceService = null;
+    private final IServiceInvoice invoiceService;
+
+    public ControllerInvoiceWeb(IServiceInvoice invoiceService)
+    {
+        this.invoiceService = invoiceService;
+    }
 
     public IServiceInvoice getInvoiceService()
     {
         return invoiceService;
     }
 
-    @Autowired
+    /*@Autowired
     public void setInvoiceService(IServiceInvoice invoiceService)
     {
         this.invoiceService = invoiceService;
-    }
+    }*/
 
 
     public void createInvoice()

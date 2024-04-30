@@ -1,19 +1,22 @@
-package com.ep.service;
+package com.ep.service.number;
 
 import com.ep.entity.Invoice;
 import com.ep.repository.IRepositoryInvoice;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ServiceInvoiceNumber implements IServiceInvoice
 {
+    private final IRepositoryInvoice invoiceRepository;
     @Value("${invoiceService.lastNumber}")
     private long lastNumber = 0L;
 
-    @Autowired
-    private IRepositoryInvoice invoiceRepository = null;
+    public ServiceInvoiceNumber(IRepositoryInvoice invoiceRepository)
+    {
+        this.invoiceRepository = invoiceRepository;
+    }
 
     public void createInvoice(Invoice invoice)
     {
@@ -30,10 +33,11 @@ public class ServiceInvoiceNumber implements IServiceInvoice
         return invoiceRepository;
     }
 
+    /*
     @Autowired
     public void setInvoiceRepository(IRepositoryInvoice invoiceRepository)
     {
         this.invoiceRepository = invoiceRepository;
-    }
+    }*/
 
 }

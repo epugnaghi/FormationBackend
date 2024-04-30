@@ -2,7 +2,6 @@ package com.ep.controller;
 
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
@@ -10,20 +9,24 @@ import java.util.Scanner;
 @Controller
 public class ControllerInvoiceConsole implements IControllerInvoice
 {
-    @Autowired
-    private IServiceInvoice invoiceService = null;
+    private final IServiceInvoice invoiceService;
+
+    public ControllerInvoiceConsole(IServiceInvoice invoiceService)
+    {
+        this.invoiceService = invoiceService;
+    }
 
     public IServiceInvoice getInvoiceService()
     {
         return invoiceService;
     }
 
-    @Autowired
+    /*@Autowired
     public void setInvoiceService(IServiceInvoice invoiceService)
     {
         this.invoiceService = invoiceService;
     }
-
+    */
 
     public void createInvoice()
     {
