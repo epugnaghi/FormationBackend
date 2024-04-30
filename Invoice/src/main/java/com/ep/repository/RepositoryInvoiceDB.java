@@ -1,4 +1,4 @@
-package com.ep.dao;
+package com.ep.repository;
 
 import com.ep.entity.Invoice;
 import org.springframework.stereotype.Repository;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class DaoInvoiceMemory implements IDaoInvoice
+public class RepositoryInvoiceDB implements IRepositoryInvoice
 {
     private static final List<Invoice> listInvoice = new ArrayList<>();
 

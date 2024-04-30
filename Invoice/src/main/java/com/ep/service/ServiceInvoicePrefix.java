@@ -1,7 +1,7 @@
 package com.ep.service;
 
-import com.ep.dao.IDaoInvoice;
 import com.ep.entity.Invoice;
+import com.ep.repository.IRepositoryInvoice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class ServiceInvoicePrefix implements IServiceInvoice
     private String prefix;
 
     @Autowired
-    private IDaoInvoice invoiceDao = null;
+    private IRepositoryInvoice invoiceRepository = null;
 
     public long getLastNumber()
     {
@@ -44,18 +44,18 @@ public class ServiceInvoicePrefix implements IServiceInvoice
 
         invoice.setNumber(prefix + lastNumber);
 
-        invoiceDao.create(invoice);
+        invoiceRepository.create(invoice);
     }
 
-    public IDaoInvoice getInvoiceDao()
+    public IRepositoryInvoice getInvoiceRepository()
     {
-        return invoiceDao;
+        return invoiceRepository;
     }
 
     @Autowired
-    public void setInvoiceDao(IDaoInvoice invoiceDao)
+    public void setInvoiceRepository(IRepositoryInvoice invoiceRepository)
     {
-        this.invoiceDao = invoiceDao;
+        this.invoiceRepository = invoiceRepository;
     }
 
 }

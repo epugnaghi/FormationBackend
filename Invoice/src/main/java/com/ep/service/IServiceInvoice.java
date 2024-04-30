@@ -1,12 +1,12 @@
 package com.ep.service;
 
-import com.ep.dao.IDaoInvoice;
 import com.ep.entity.Invoice;
+import com.ep.repository.IRepositoryInvoice;
 
 
 public interface IServiceInvoice
 {
-    void setInvoiceDao(IDaoInvoice invoiceDao);
+    void setInvoiceRepository(IRepositoryInvoice invoiceRepository);
 
     void createInvoice(Invoice invoice);
 }

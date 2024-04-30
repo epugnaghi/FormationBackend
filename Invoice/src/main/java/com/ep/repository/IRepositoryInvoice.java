@@ -1,9 +1,9 @@
-package com.ep.dao;
+package com.ep.repository;
 
 import com.ep.entity.Invoice;
 
 
-public interface IDaoInvoice
+public interface IRepositoryInvoice
 {
     void create(Invoice invoice);
 }

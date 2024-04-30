@@ -30,8 +30,6 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         Invoice invoice = new Invoice();
         invoice.setCustomerName(name);
 
-        //IInvoiceService invoiceService = null;
-        //invoiceService = new InvoiceServiceMichel();
         invoiceService.createInvoice(invoice);
     }
 

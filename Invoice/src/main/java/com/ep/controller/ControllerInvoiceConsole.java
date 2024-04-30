@@ -35,8 +35,6 @@ public class ControllerInvoiceConsole implements IControllerInvoice
         Invoice invoice = new Invoice();
         invoice.setCustomerName(name);
 
-        //IInvoiceService invoiceService = null;
-        //invoiceService = new InvoiceService();
         invoiceService.createInvoice(invoice);
     }
 
