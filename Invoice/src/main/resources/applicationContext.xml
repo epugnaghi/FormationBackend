@@ -11,10 +11,4 @@
     <context:component-scan base-package="com.ep.controller.web"/>
     <context:component-scan base-package="com.ep.service.prefix"/>
     <context:component-scan base-package="com.ep.repository.db"/>
-    <!--<bean class="com.ep.service.prefix.ServiceInvoicePrefix"/>
-
-    <bean class="com.ep.repository.memory.RepositoryInvoiceMemory"/>
-
-    <bean class="com.ep.controller.ControllerInvoiceConsole">
-    </bean>-->
 </beans>
