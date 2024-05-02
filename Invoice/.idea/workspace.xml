@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c225c22a-0792-4a51-888e-bd57ef351a01" name="Changes" comment="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/ControllerInvoiceConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/ControllerInvoiceConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/ControllerInvoiceWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/ControllerInvoiceWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/controller/IControllerInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/controller/IControllerInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/DaoInvoiceDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/DaoInvoiceDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/DaoInvoiceMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/DaoInvoiceMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/dao/IDaoInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/dao/IDaoInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/IServiceInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/IServiceInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/service/ServiceInvoicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,7 +68,6 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -365,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714458815430</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1714488943086</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1714488943086</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
