@@ -2,12 +2,11 @@ package com.ep.repository.db;
 
 import com.ep.entity.Invoice;
 import com.ep.repository.IRepositoryInvoice;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+//@Repository
 public class RepositoryInvoiceDB implements IRepositoryInvoice
 {
     private static final List<Invoice> listInvoice = new ArrayList<>();

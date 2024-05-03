@@ -1,40 +1,22 @@
 package com.ep;
 
 import com.ep.controller.IControllerInvoice;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.ImportResource;
 
-@Configuration
-@ComponentScan(basePackages = {"com.ep.controller.console", "com.ep.service.prefix", "com.ep.repository.memory"})
-@PropertySource("classpath:application.properties")
+
+@SpringBootApplication
+//@PropertySource("classpath:application.properties")
 @ImportResource("classpath:applicationContext.xml")
 public class App
 {
     public static void main(String[] args)
     {
-        //ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        ApplicationContext context = new AnnotationConfigApplicationContext(App.class);
+        ApplicationContext context = SpringApplication.run(App.class);
         IControllerInvoice invoiceController = context.getBean(IControllerInvoice.class);
 
         invoiceController.createInvoice();
     }
-
-/*
-    @Bean
-    public IServiceInvoice configServiceInvoice()
-    {
-        return new ServiceInvoicePrefix(new RepositoryInvoiceMemory());
-    }
-*/
-/*
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer()
-    {
-        PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
-
-        configurer.setLocation(new ClassPathResource("application.properties"));
-
-        return configurer;
-    }
-    */
 }

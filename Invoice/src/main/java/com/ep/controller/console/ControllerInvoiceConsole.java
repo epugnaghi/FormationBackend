@@ -3,11 +3,10 @@ package com.ep.controller.console;
 import com.ep.controller.IControllerInvoice;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
-import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
-@Controller
+//@Controller
 public class ControllerInvoiceConsole implements IControllerInvoice
 {
     private final IServiceInvoice invoiceService;

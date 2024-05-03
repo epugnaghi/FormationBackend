@@ -4,9 +4,8 @@ import com.ep.entity.Invoice;
 import com.ep.repository.IRepositoryInvoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class ServiceInvoiceNumber implements IServiceInvoice
 {
     private final IRepositoryInvoice invoiceRepository;
