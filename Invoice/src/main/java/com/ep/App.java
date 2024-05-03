@@ -19,11 +19,22 @@ public class App
         invoiceController.createInvoice();
     }
 
-    /*
+/*
     @Bean
     public IServiceInvoice configServiceInvoice()
     {
-        return new ServiceInvoicePrefix();
+        return new ServiceInvoicePrefix(new RepositoryInvoiceMemory());
+    }
+*/
+/*
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer()
+    {
+        PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
+
+        configurer.setLocation(new ClassPathResource("application.properties"));
+
+        return configurer;
     }
     */
 }
