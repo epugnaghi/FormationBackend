@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ImportResource;
 
 
 @SpringBootApplication
-//@PropertySource("classpath:application.properties")
 @ImportResource("classpath:applicationContext.xml")
 public class App
 {
