@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
 	<title>Formation Backend</title>
@@ -10,7 +10,14 @@
 <ul>
 	<li>
 		<a href="">ajout de facture</a>
+		<a href="">brol</a>
 	</li>
 </ul>
+<table border="1">
+	<tr th:each="invoice: ${invoices}">
+		<td th:text="${invoice.number}"></td>
+		<td th:text="${invoice.customerName}"></td>
+	</tr>
+</table>
 </body>
 </html>
