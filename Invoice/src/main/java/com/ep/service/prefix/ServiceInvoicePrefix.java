@@ -6,6 +6,8 @@ import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ServiceInvoicePrefix implements IServiceInvoice
 {
@@ -49,6 +51,12 @@ public class ServiceInvoicePrefix implements IServiceInvoice
         invoice.setNumber(prefix + lastNumber);
 
         invoiceRepository.create(invoice);
+    }
+
+    @Override
+    public List<Invoice> getInvoiceList()
+    {
+        return invoiceRepository.list();
     }
 
     public IRepositoryInvoice getInvoiceRepository()

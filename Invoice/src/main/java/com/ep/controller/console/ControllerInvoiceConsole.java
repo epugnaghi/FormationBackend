@@ -21,13 +21,6 @@ public class ControllerInvoiceConsole implements IControllerInvoice
         return invoiceService;
     }
 
-    /*@Autowired
-    public void setInvoiceService(IServiceInvoice invoiceService)
-    {
-        this.invoiceService = invoiceService;
-    }
-    */
-
     public void createInvoice()
     {
         System.out.println("Console-" + "Name : ");

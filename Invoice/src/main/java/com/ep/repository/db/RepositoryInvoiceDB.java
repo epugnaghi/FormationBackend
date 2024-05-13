@@ -16,4 +16,10 @@ public class RepositoryInvoiceDB implements IRepositoryInvoice
         listInvoice.add(invoice);
         System.out.println("DB-invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
     }
+
+    @Override
+    public List<Invoice> list()
+    {
+        return null;
+    }
 }

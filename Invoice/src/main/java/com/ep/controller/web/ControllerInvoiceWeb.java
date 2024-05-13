@@ -6,6 +6,8 @@ import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @Controller
 public class ControllerInvoiceWeb implements IControllerInvoice
 {
@@ -35,6 +37,9 @@ public class ControllerInvoiceWeb implements IControllerInvoice
     public String displayHome()
     {
         System.out.println("la methode display home de controllerinvoiceweb");
+
+        List<Invoice> list = invoiceService.getInvoiceList();
+
         return "index";
     }
 }

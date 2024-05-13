@@ -17,4 +17,28 @@ public class RepositoryInvoiceMemory implements IRepositoryInvoice
         listInvoice.add(invoice);
         System.out.println("Memory-invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
     }
+
+    @Override
+    public List<Invoice> list()
+    {
+        List<Invoice> result = new ArrayList<>();
+        Invoice invoice = null;
+
+        invoice = new Invoice();
+        invoice.setNumber("num_1973");
+        invoice.setCustomerName("etienne");
+        result.add(invoice);
+
+        invoice = new Invoice();
+        invoice.setNumber("num_1979");
+        invoice.setCustomerName("christelle");
+        result.add(invoice);
+
+        invoice = new Invoice();
+        invoice.setNumber("num_2006");
+        invoice.setCustomerName("lukas");
+        result.add(invoice);
+
+        return result;
+    }
 }
