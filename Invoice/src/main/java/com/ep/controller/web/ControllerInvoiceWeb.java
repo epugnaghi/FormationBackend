@@ -4,6 +4,7 @@ import com.ep.controller.IControllerInvoice;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ControllerInvoiceWeb implements IControllerInvoice
@@ -30,4 +31,10 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         invoiceService.createInvoice(invoice);
     }
 
+    @RequestMapping("/invoice-home")
+    public String displayHome()
+    {
+        System.out.println("la methode display home de controllerinvoiceweb");
+        return "index";
+    }
 }
