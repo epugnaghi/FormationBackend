@@ -1,16 +1,14 @@
-package com.ep.InvoiceWeb;
+package com.ep;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InvoiceWebApplication
+public class AppInvoiceWeb
 {
-
     public static void main(String[] args)
     {
-        SpringApplication.run(InvoiceWebApplication.class, args);
+        SpringApplication.run(AppInvoiceWeb.class, args);
     }
-
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Formation Backend</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<h2>action : </h2>
+<ul>
+	<li>
+		<a href="">AJOUT FACTURE V1.0</a>
+	</li>
+</ul>
+<table border="1">
+	<tr th:each="invoice: ${invoices}">
+		<td th:text="${invoice.number}"></td>
+		<td th:text="${invoice.customerName}"></td>
+	</tr>
+</table>
+</body>
+</html>
