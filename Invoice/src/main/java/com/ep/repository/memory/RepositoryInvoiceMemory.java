@@ -41,4 +41,17 @@ public class RepositoryInvoiceMemory implements IRepositoryInvoice
 
         return result;
     }
+
+    @Override
+    public Invoice getById(String number)
+    {
+        Invoice invoice = null;
+
+        invoice = new Invoice();
+        invoice.setNumber(number);
+        invoice.setCustomerName("Aeramen");
+        invoice.setOrderNumber("ON_002");
+
+        return invoice;
+    }
 }

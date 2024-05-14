@@ -12,4 +12,6 @@ public interface IRepositoryInvoice
     void create(Invoice invoice);
 
     List<Invoice> list();
+
+    Invoice getById(String number);
 }

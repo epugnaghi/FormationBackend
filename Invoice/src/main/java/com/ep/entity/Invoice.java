@@ -4,6 +4,7 @@ public class Invoice
 {
     private String number;
     private String customerName;
+    private String orderNumber;
 
     public String getNumber()
     {
@@ -23,6 +24,16 @@ public class Invoice
     public void setCustomerName(String customerName)
     {
         this.customerName = customerName;
+    }
+
+    public String getOrderNumber()
+    {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(String orderNumber)
+    {
+        this.orderNumber = orderNumber;
     }
 
 }

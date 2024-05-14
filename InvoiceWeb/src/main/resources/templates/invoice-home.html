@@ -9,12 +9,14 @@
 <h2>action : </h2>
 <ul>
 	<li>
-		<a href="">AJOUT FACTURE V2.1</a>
+		<a href="">AJOUT FACTURE V2.3</a>
 	</li>
 </ul>
 <table border="1">
 	<tr th:each="invoice: ${invoices}">
-		<td th:text="${invoice.number}"></td>
+		<td>
+			<a th:href="${invoice.number}" th:text="${invoice.number}"/>
+		</td>
 		<td th:text="${invoice.customerName}"></td>
 	</tr>
 </table>

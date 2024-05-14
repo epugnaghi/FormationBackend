@@ -4,12 +4,12 @@ import com.ep.controller.IControllerInvoice;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
-
 @Controller
+@RequestMapping("/invoice")
 public class ControllerInvoiceWeb implements IControllerInvoice
 {
     private final IServiceInvoice invoiceService;
@@ -34,13 +34,23 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         invoiceService.createInvoice(invoice);
     }
 
-    @RequestMapping("/invoice-home")
-    public @ModelAttribute("invoices") List<Invoice> displayHome()
+    @RequestMapping("/home")
+    public String displayHome(Model model)
     {
         System.out.println("la methode display home de controllerinvoiceweb");
 
-        List<Invoice> list = invoiceService.getInvoiceList();
+        model.addAttribute("invoices", invoiceService.getInvoiceList());
 
-        return list;
+        return "invoice-home";
+    }
+
+    @RequestMapping("/{id}")
+    public String displayInvoice(@PathVariable("id") String number, Model model)
+    {
+        System.out.println("la methode display invoice de controllerinvoiceweb");
+
+        model.addAttribute("invoice", invoiceService.getInvoiceByNumber(number));
+
+        return "invoice-details";
     }
 }

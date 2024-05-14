@@ -59,6 +59,12 @@ public class ServiceInvoicePrefix implements IServiceInvoice
         return invoiceRepository.list();
     }
 
+    @Override
+    public Invoice getInvoiceByNumber(String number)
+    {
+        return invoiceRepository.getById(number);
+    }
+
     public IRepositoryInvoice getInvoiceRepository()
     {
         return invoiceRepository;
