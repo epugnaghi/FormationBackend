@@ -5,5 +5,5 @@ controller - service - repository
  */
 public interface IControllerInvoice
 {
-    void createInvoice();
+    String createInvoice();
 }

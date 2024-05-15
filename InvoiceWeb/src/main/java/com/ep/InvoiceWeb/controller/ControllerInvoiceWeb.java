@@ -5,7 +5,9 @@ import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -24,7 +26,8 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         return invoiceService;
     }
 
-    public void createInvoice()
+    @PostMapping()
+    public String createInvoice()
     {
         String name = "lukas";
 
@@ -32,9 +35,11 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         invoice.setCustomerName("Web-" + name);
 
         invoiceService.createInvoice(invoice);
+
+        return "invoice-created";
     }
 
-    @RequestMapping("/home")
+    @GetMapping("/home")
     public String displayHome(Model model)
     {
         System.out.println("la methode display home de controllerinvoiceweb");
@@ -44,7 +49,7 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         return "invoice-home";
     }
 
-    @RequestMapping("/{id}")
+    @GetMapping("/{id}")
     public String displayInvoice(@PathVariable("id") String number, Model model)
     {
         System.out.println("la methode display invoice de controllerinvoiceweb");
@@ -52,5 +57,11 @@ public class ControllerInvoiceWeb implements IControllerInvoice
         model.addAttribute("invoice", invoiceService.getInvoiceByNumber(number));
 
         return "invoice-details";
+    }
+
+    @GetMapping("/create-form")
+    public String displayInvoiceCreateForm()
+    {
+        return "invoice-create-form";
     }
 }
