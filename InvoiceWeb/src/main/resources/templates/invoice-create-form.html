@@ -5,10 +5,12 @@
 	<title>Formation Backend</title>
 </head>
 <body>
-<a href="">CREATE FORM V3</a>
+<a href="">CREATE FORM V5</a>
 <form method="post" th:action="@{/invoice}" th:object="${form}">
 	<p>Customer name<input th:field="*{customerName}" type="text"/></p>
+	<div th:errors="*{customerName}" th:if="${#fields.hasErrors('customerName')}"></div>
 	<p>Order number<input th:field="*{orderNumber}" type="text"></p>
+	<div th:errors="*{orderNumber}" th:if="${#fields.hasErrors('orderNumber')}"></div>
 	<input type="submit" value="ok">
 </form>
 </body>

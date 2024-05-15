@@ -7,10 +7,12 @@ public class InvoiceForm
 {
     private String number;
 
-    @NotBlank
+    //@NotBlank(message = "nom obligatoire")
+    @NotBlank()
     private String customerName;
 
-    @Size(min = 1, max = 13)
+    //@Size(min = 1, max = 5, message = "taille entre 1 et 5")
+    @Size(min = 1, max = 5)
     private String orderNumber;
 
     public String getNumber()
