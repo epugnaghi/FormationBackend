@@ -6,7 +6,9 @@
 </head>
 <body>
 <a href="">CREATE FORM V3</a>
-<form method="post" th:action="@{/invoice}">
+<form method="post" th:action="@{/invoice}" th:object="${form}">
+	<p>Customer name<input th:field="*{customerName}" type="text"/></p>
+	<p>Order number<input th:field="*{orderNumber}" type="text"></p>
 	<input type="submit" value="ok">
 </form>
 </body>

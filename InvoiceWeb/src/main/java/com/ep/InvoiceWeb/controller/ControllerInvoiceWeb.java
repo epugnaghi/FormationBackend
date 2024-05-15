@@ -5,10 +5,7 @@ import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/invoice")
@@ -27,12 +24,12 @@ public class ControllerInvoiceWeb implements IControllerInvoice
     }
 
     @PostMapping()
-    public String createInvoice()
+    public String createInvoice(@ModelAttribute("form") Invoice invoice)
     {
-        String name = "lukas";
+        //String name = "lukas";
 
-        Invoice invoice = new Invoice();
-        invoice.setCustomerName("Web-" + name);
+        //Invoice invoice = new Invoice();
+        //invoice.setCustomerName("Web-" + name);
 
         invoiceService.createInvoice(invoice);
 
@@ -60,7 +57,7 @@ public class ControllerInvoiceWeb implements IControllerInvoice
     }
 
     @GetMapping("/create-form")
-    public String displayInvoiceCreateForm()
+    public String displayInvoiceCreateForm(@ModelAttribute("form") Invoice invoice)
     {
         return "invoice-create-form";
     }
