@@ -1,11 +1,16 @@
-package com.ep.entity;
+package com.ep.InvoiceWeb.form;
 
-public class Invoice
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public class InvoiceForm
 {
     private String number;
 
+    @NotBlank
     private String customerName;
 
+    @Size(min = 1, max = 13)
     private String orderNumber;
 
     public String getNumber()

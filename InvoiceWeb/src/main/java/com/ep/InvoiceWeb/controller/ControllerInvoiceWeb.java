@@ -1,15 +1,17 @@
 package com.ep.InvoiceWeb.controller;
 
-import com.ep.controller.IControllerInvoice;
+import com.ep.InvoiceWeb.form.InvoiceForm;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/invoice")
-public class ControllerInvoiceWeb implements IControllerInvoice
+public class ControllerInvoiceWeb //implements IControllerInvoice
 {
     private final IServiceInvoice invoiceService;
 
@@ -24,12 +26,16 @@ public class ControllerInvoiceWeb implements IControllerInvoice
     }
 
     @PostMapping()
-    public String createInvoice(@ModelAttribute("form") Invoice invoice)
+    public String createInvoice(@Valid @ModelAttribute("form") InvoiceForm invoiceForm, BindingResult result)
     {
-        //String name = "lukas";
+        if (result.hasErrors())
+        {
+            return "invoice-create-form";
+        }
 
-        //Invoice invoice = new Invoice();
-        //invoice.setCustomerName("Web-" + name);
+        Invoice invoice = new Invoice();
+        invoice.setOrderNumber(invoiceForm.getOrderNumber());
+        invoice.setCustomerName(invoiceForm.getCustomerName());
 
         invoiceService.createInvoice(invoice);
 
@@ -57,7 +63,7 @@ public class ControllerInvoiceWeb implements IControllerInvoice
     }
 
     @GetMapping("/create-form")
-    public String displayInvoiceCreateForm(@ModelAttribute("form") Invoice invoice)
+    public String displayInvoiceCreateForm(@ModelAttribute("form") InvoiceForm invoice)
     {
         return "invoice-create-form";
     }
