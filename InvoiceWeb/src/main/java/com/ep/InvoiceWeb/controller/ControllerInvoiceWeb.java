@@ -1,13 +1,12 @@
 package com.ep.InvoiceWeb.controller;
 
 import com.ep.InvoiceWeb.form.InvoiceForm;
-import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
-import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/invoice")
@@ -25,6 +24,7 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
         return invoiceService;
     }
 
+    /*
     @PostMapping()
     public String createInvoice(@Valid @ModelAttribute("form") InvoiceForm invoiceForm, BindingResult result)
     {
@@ -42,6 +42,8 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
         return "invoice-created";
     }
 
+     */
+
     @GetMapping("/home")
     public String displayHome(Model model)
     {
@@ -52,6 +54,7 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
         return "invoice-home";
     }
 
+    /*
     @GetMapping("/{id}")
     public String displayInvoice(@PathVariable("id") String number, Model model)
     {
@@ -61,6 +64,8 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
 
         return "invoice-details";
     }
+
+     */
 
     @GetMapping("/create-form")
     public String displayInvoiceCreateForm(@ModelAttribute("form") InvoiceForm invoice)

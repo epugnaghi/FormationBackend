@@ -44,13 +44,15 @@ public class ServiceInvoicePrefix implements IServiceInvoice
         this.prefix = prefix;
     }
 
-    public void createInvoice(Invoice invoice)
+    public Invoice createInvoice(Invoice invoice)
     {
         lastNumber++;
 
         invoice.setNumber(prefix + lastNumber);
 
         invoiceRepository.create(invoice);
+
+        return invoice;
     }
 
     @Override
