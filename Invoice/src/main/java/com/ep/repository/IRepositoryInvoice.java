@@ -9,7 +9,7 @@ controller - service - repository
  */
 public interface IRepositoryInvoice
 {
-    void create(Invoice invoice);
+    Invoice create(Invoice invoice);
 
     List<Invoice> list();
 

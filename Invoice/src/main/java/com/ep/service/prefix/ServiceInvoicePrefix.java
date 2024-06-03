@@ -4,11 +4,10 @@ import com.ep.entity.Invoice;
 import com.ep.repository.IRepositoryInvoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public class ServiceInvoicePrefix implements IServiceInvoice
 {
     private final IRepositoryInvoice invoiceRepository;
