@@ -1,21 +1,23 @@
 package com.ep.entity;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Column;
+
+import jakarta.persistence.*;
 
 /*
 agregate root
  */
+@Entity
 public class Invoice
 {
     @Id
-    @Column("INVOICE_NUMBER")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "INVOICE_NUMBER")
     private String number;
 
-    @Column("CUSTOMER_NAME")
+    @Column(name = "CUSTOMER_NAME")
     private String customerName;
 
-    @Column("ORDER_NUMBER")
+    @Column(name = "ORDER_NUMBER")
     private String orderNumber;
 
     public Invoice(String number, String customerName)
