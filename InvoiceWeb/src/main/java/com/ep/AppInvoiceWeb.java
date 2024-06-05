@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+//@EnableJdbcRepositories
 public class AppInvoiceWeb
 {
     /*dans rep ep car il va parser à la recherche de bean dans le rep ep du projet invoice*/

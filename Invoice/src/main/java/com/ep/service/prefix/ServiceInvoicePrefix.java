@@ -5,8 +5,6 @@ import com.ep.repository.IRepositoryInvoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Value;
 
-import java.util.List;
-
 //@Service
 public class ServiceInvoicePrefix implements IServiceInvoice
 {
@@ -49,21 +47,21 @@ public class ServiceInvoicePrefix implements IServiceInvoice
 
         invoice.setNumber(prefix + lastNumber);
 
-        invoiceRepository.create(invoice);
+        invoiceRepository.save(invoice);
 
         return invoice;
     }
 
     @Override
-    public List<Invoice> getInvoiceList()
+    public Iterable<Invoice> getInvoiceList()
     {
-        return invoiceRepository.list();
+        return invoiceRepository.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number)
     {
-        return invoiceRepository.getById(number);
+        return invoiceRepository.findById(number).orElseThrow();
     }
 
     public IRepositoryInvoice getInvoiceRepository()

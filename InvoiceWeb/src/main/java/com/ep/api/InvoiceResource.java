@@ -4,8 +4,6 @@ import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/invoice")
 public class InvoiceResource //implements IControllerInvoice
@@ -31,7 +29,7 @@ public class InvoiceResource //implements IControllerInvoice
 
 
     @GetMapping
-    public List<Invoice> list()
+    public Iterable<Invoice> list()
     {
         System.out.println("la methode display home de controllerinvoiceweb");
 

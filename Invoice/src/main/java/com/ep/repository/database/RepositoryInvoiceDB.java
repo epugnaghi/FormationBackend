@@ -1,5 +1,6 @@
 package com.ep.repository.database;
 
+/*
 import com.ep.entity.Invoice;
 import com.ep.repository.IRepositoryInvoice;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,3 +57,5 @@ public class RepositoryInvoiceDB implements IRepositoryInvoice
 
     }
 }
+
+ */

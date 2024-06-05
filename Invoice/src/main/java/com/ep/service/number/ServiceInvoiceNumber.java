@@ -6,8 +6,6 @@ import com.ep.service.IServiceInvoice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class ServiceInvoiceNumber implements IServiceInvoice
 {
@@ -22,19 +20,19 @@ public class ServiceInvoiceNumber implements IServiceInvoice
 
     public Invoice createInvoice(Invoice invoice)
     {
-        return invoiceRepository.create(invoice);
+        return invoiceRepository.save(invoice);
     }
 
     @Override
-    public List<Invoice> getInvoiceList()
+    public Iterable<Invoice> getInvoiceList()
     {
-        return invoiceRepository.list();
+        return invoiceRepository.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number)
     {
-        return invoiceRepository.getById(number);
+        return invoiceRepository.findById(number).orElseThrow();
     }
 
     public IRepositoryInvoice getInvoiceRepository()
