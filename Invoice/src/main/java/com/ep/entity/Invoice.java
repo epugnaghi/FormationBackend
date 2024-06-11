@@ -9,6 +9,7 @@ agregate root
 @Entity
 public class Invoice
 {
+    /*
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "INVOICE_NUMBER")
@@ -19,6 +20,17 @@ public class Invoice
 
     @Column(name = "ORDER_NUMBER")
     private String orderNumber;
+*/
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "INVOICE_NUMBER", columnDefinition = "BIGINT")
+    private String number;
+
+    @Column(length = 13)
+    private String orderNumber;
+
+    @Column(nullable = false, length = 50)
+    private String customerName;
 
     public Invoice(String number, String customerName)
     {
