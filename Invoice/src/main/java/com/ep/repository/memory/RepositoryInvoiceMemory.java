@@ -80,58 +80,5 @@ public class RepositoryInvoiceMemory implements IRepositoryInvoice
     {
 
     }
-    /*
-    private static final List<Invoice> listInvoice = new ArrayList<>();
-
-    public Invoice save(Invoice invoice)
-    {
-        listInvoice.add(invoice);
-        System.out.println("Memory-invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
-
-        return invoice;
-    }
-
-    @Override
-    public Iterable<Invoice> findAll()
-    {
-
-        List<Invoice> result = new ArrayList<>();
-        Invoice invoice = null;
-
-        invoice = new Invoice();
-        invoice.setNumber("num_1973");
-        invoice.setCustomerName("etienne");
-        result.add(invoice);
-
-        invoice = new Invoice();
-        invoice.setNumber("num_1979");
-        invoice.setCustomerName("christelle");
-        result.add(invoice);
-
-        invoice = new Invoice();
-        invoice.setNumber("num_2006");
-        invoice.setCustomerName("lukas");
-        result.add(invoice);
-
-        return result;
-
-    }
-
-    @Override
-    public Optional<Invoice> findById(String number)
-    {
-
-        Invoice invoice = null;
-
-        invoice = new Invoice();
-        invoice.setNumber(number);
-        invoice.setCustomerName("Aeramen");
-        invoice.setOrderNumber("ON_002");
-
-        return invoice;
-
-    }
-
-     */
 }
 

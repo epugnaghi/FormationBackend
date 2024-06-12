@@ -3,46 +3,46 @@ package com.ep.entity;
 
 import jakarta.persistence.*;
 
-/*
-agregate root
- */
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Invoice
 {
-    /*
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "INVOICE_NUMBER")
-    private String number;
 
-    @Column(name = "CUSTOMER_NAME")
-    private String customerName;
-
-    @Column(name = "ORDER_NUMBER")
-    private String orderNumber;
-*/
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    @JoinColumn(name = "INVOICE_NUMBER", nullable = false)
+    private final List<InvoiceLine> lines = new ArrayList<>();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "INVOICE_NUMBER", columnDefinition = "BIGINT")
     private String number;
-
     @Column(length = 13)
     private String orderNumber;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ID_CUSTOMER", nullable = false)
+    private Customer customer;
 
-    @Column(nullable = false, length = 50)
-    private String customerName;
-
-    public Invoice(String number, String customerName)
+    public Invoice(String number, String orderNumber, Customer customer)
     {
         this.number = number;
-        this.customerName = customerName;
+        this.orderNumber = orderNumber;
+        this.customer = customer;
     }
 
-    public Invoice(String number, String customerName, String orderNumber)
+    public Invoice(String number, Customer customer)
     {
         this.number = number;
-        this.customerName = customerName;
-        this.orderNumber = orderNumber;
+        this.customer = customer;
+    }
+
+    public Invoice(Customer customer)
+    {
+        this.customer = customer;
     }
 
     public Invoice()
@@ -59,16 +59,6 @@ public class Invoice
         this.number = number;
     }
 
-    public String getCustomerName()
-    {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName)
-    {
-        this.customerName = customerName;
-    }
-
     public String getOrderNumber()
     {
         return orderNumber;
@@ -79,4 +69,28 @@ public class Invoice
         this.orderNumber = orderNumber;
     }
 
+    public List<InvoiceLine> getLines()
+    {
+        return lines;
+    }
+
+    public void addLine(InvoiceLine line)
+    {
+        this.lines.add(line);
+    }
+
+    public void removeLine(InvoiceLine line)
+    {
+        this.lines.remove(line);
+    }
+
+    public Customer getCustomer()
+    {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer)
+    {
+        this.customer = customer;
+    }
 }
