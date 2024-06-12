@@ -1,6 +1,8 @@
 package com.ep.InvoiceWeb.controller;
 
+
 import com.ep.InvoiceWeb.form.InvoiceForm;
+import com.ep.entity.Customer;
 import com.ep.entity.Invoice;
 import com.ep.service.IServiceInvoice;
 import jakarta.validation.Valid;
@@ -38,8 +40,10 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
         }
 
         Invoice invoice = new Invoice();
+        Customer customer = new Customer(invoiceForm.getCustomerName());
+
         invoice.setOrderNumber(invoiceForm.getOrderNumber());
-        invoice.setCustomerName(invoiceForm.getCustomerName());
+        invoice.setCustomer(customer);
 
         invoiceService.createInvoice(invoice);
 
@@ -57,18 +61,6 @@ public class ControllerInvoiceWeb //implements IControllerInvoice
         return "invoice-home";
     }
 
-    /*
-    @GetMapping("/{id}")
-    public String displayInvoice(@PathVariable("id") String number, Model model)
-    {
-        System.out.println("la methode display invoice de controllerinvoiceweb");
-
-        model.addAttribute("invoice", invoiceService.getInvoiceByNumber(number));
-
-        return "invoice-details";
-    }
-
-     */
 
     @GetMapping("/create-form")
     public String displayInvoiceCreateForm(@ModelAttribute("form") InvoiceForm invoice)
