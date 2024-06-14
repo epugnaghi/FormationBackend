@@ -4,10 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Hibernate4AllApplication {
+public class AppHibernate4All
+{
 
 	public static void main(String[] args) {
-		SpringApplication.run(Hibernate4AllApplication.class, args);
+		SpringApplication.run(AppHibernate4All.class, args);
 	}
 
 }
