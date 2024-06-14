@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {PersistenceConfig.class})
 public class MovieRepositoryTest

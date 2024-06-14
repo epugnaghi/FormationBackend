@@ -1,5 +1,6 @@
 package com.ep.Hibernate4All.domain;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
