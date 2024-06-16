@@ -42,11 +42,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+        </dependency>
 
 
-
-
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>
