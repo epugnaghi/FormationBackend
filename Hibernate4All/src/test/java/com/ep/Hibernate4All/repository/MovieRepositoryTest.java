@@ -7,10 +7,13 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ansi.Ansi8BitColor;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import java.util.List;
 
 
 @ExtendWith(SpringExtension.class)
@@ -43,5 +46,22 @@ public class MovieRepositoryTest
         Movie movie = repository.find(-2L);
 
         System.out.println("Name : " + movie.getName());
+    }
+
+    @Test
+    public void findAll_casNominal()
+    {
+        List<Movie> list = repository.getAll();
+
+        if(list != null)
+        {
+            System.out.println("Stream : ");
+            list.forEach((n) -> System.out.println("Name : " + n.getName()));
+
+            System.out.println("Classic : ");
+            for (Movie movie : list) {
+                System.out.println("Name : " + movie.getName());
+            }
+        }
     }
 }

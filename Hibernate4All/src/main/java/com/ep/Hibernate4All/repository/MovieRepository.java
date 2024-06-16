@@ -24,13 +24,19 @@ public class MovieRepository
         entityManager.persist(movie);
     }
 
+    @Transactional
     public Movie find(Long id)
     {
-        return entityManager.find(Movie.class, id);
+        Movie result = entityManager.find(Movie.class, id);
+
+        System.out.println("Contains : " + entityManager.contains(result));
+
+        return result;
     }
 
+    @Transactional
     public List<Movie> getAll()
     {
-        throw new UnsupportedOperationException();
+        return entityManager.createQuery("from Movie", Movie.class).getResultList();
     }
 }
