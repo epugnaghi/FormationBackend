@@ -14,8 +14,6 @@ import java.util.logging.Logger;
 @Repository
 public class MovieRepository
 {
-
-
     @PersistenceContext
     EntityManager entityManager;
 
@@ -24,6 +22,11 @@ public class MovieRepository
     {
         entityManager.contains(movie);
         entityManager.persist(movie);
+    }
+
+    public Movie find(Long id)
+    {
+        return entityManager.find(Movie.class, id);
     }
 
     public List<Movie> getAll()
