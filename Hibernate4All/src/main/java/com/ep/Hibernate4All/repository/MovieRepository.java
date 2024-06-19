@@ -54,4 +54,27 @@ public class MovieRepository
         logger.warn("MovieRepository-merge");
         return entityManager.merge(movie);
     }
+
+    @Transactional
+    public void remove(Long id)
+    {
+        logger.warn("MovieRepository-remove");
+        Movie movie = entityManager.find(Movie.class, id);
+
+        entityManager.remove(movie);
+    }
+
+    @Transactional
+    public Movie getReference(Long id)
+    {
+        logger.warn("MovieRepository-getReference");
+
+        Movie movie = null;
+        movie = entityManager.getReference(Movie.class, id);
+
+        if (movie != null)
+            logger.warn("Movie : " + movie.getName());
+
+        return movie;
+    }
 }

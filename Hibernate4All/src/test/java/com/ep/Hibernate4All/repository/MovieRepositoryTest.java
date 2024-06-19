@@ -29,10 +29,12 @@ public class MovieRepositoryTest
     @Test
     public void testSuite()
     {
-//        testSave();
-//        testFind();
-//        testFindAll();
+        testSave();
+        testFind();
+        testFindAll();
         testMerge();
+        testRemove();
+        testReference();
     }
 
     //    @Test
@@ -64,7 +66,7 @@ public class MovieRepositoryTest
 
         List<Movie> list = repository.getAll();
 
-        if(list != null)
+        if (list != null)
         {
             //logger.warn("Stream : ");
             list.forEach((movie) -> logger.warn("Name : {}", movie.getName()));
@@ -85,6 +87,29 @@ public class MovieRepositoryTest
         movie.setName("inception2");
         movie.setId(-1L);
 
-        movie = repository.merge(movie);
+        Movie movieMerge = new Movie();
+        movieMerge = repository.merge(movie);
+
+        assert movieMerge.getName().compareTo("inception2") == 0;
+    }
+
+    public void testRemove()
+    {
+        logger.warn("TEST : REMOVE");
+
+        repository.remove(-2L);
+
+//        assert movieMerge.getName().compareTo("inception2")==0;
+    }
+
+    public void testReference()
+    {
+        logger.warn("TEST : GET REFERENCE");
+
+        Movie movie = repository.getReference(-1L);
+
+        logger.warn("movie : " + movie.getName());
+
+//        assert movieMerge.getName().compareTo("inception2")==0;
     }
 }
