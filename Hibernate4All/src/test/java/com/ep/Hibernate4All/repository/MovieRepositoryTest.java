@@ -29,7 +29,7 @@ public class MovieRepositoryTest
     @Test
     public void save_casNominal()
     {
-        logger.debug("MovieRepositoryTest/save_casNominal");
+        logger.warn("MovieRepositoryTest/save_casNominal");
 
 
         Movie movie = new Movie();
@@ -43,7 +43,7 @@ public class MovieRepositoryTest
     {
         Movie movie = repository.find(-2L);
 
-        logger.debug("Name : {}", movie.getName());
+        logger.warn("Name : {}", movie.getName());
     }
 
     @Test
@@ -53,12 +53,12 @@ public class MovieRepositoryTest
 
         if(list != null)
         {
-            logger.debug("Stream : ");
-            list.forEach((movie) -> logger.debug("Name : {}", movie.getName()));
+            logger.warn("Stream : ");
+            list.forEach((movie) -> logger.warn("Name : {}", movie.getName()));
 
-            logger.debug("Classic : ");
+            logger.warn("Classic : ");
             for (Movie movie : list) {
-                logger.debug("Name : {}", movie.getName());
+                logger.warn("Name : {}", movie.getName());
             }
         }
     }
