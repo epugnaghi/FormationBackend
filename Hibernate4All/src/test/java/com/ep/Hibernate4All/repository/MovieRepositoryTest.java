@@ -27,9 +27,9 @@ public class MovieRepositoryTest
     private MovieRepository repository;
 
     @Test
-    public void save_casNominal()
+    public void testSave()
     {
-        logger.warn("MovieRepositoryTest/save_casNominal");
+        logger.warn("TEST : SAVE");
 
 
         Movie movie = new Movie();
@@ -39,27 +39,43 @@ public class MovieRepositoryTest
     }
 
     @Test
-    public void find_casNominal()
+    public void testFind()
     {
+        logger.warn("TEST : FIND");
+
         Movie movie = repository.find(-2L);
 
         logger.warn("Name : {}", movie.getName());
     }
 
     @Test
-    public void findAll_casNominal()
+    public void testFindAll()
     {
+        logger.warn("TEST : FIND ALL");
+
         List<Movie> list = repository.getAll();
 
         if(list != null)
         {
-            logger.warn("Stream : ");
+            //logger.warn("Stream : ");
             list.forEach((movie) -> logger.warn("Name : {}", movie.getName()));
 
-            logger.warn("Classic : ");
-            for (Movie movie : list) {
-                logger.warn("Name : {}", movie.getName());
-            }
+//            logger.warn("Classic : ");
+//            for (Movie movie : list) {
+//                logger.warn("Name : {}", movie.getName());
+//            }
         }
+    }
+
+    @Test
+    public void testMerge()
+    {
+        logger.warn("TEST : MERGE");
+
+        Movie movie = new Movie();
+        movie.setName("inception");
+        movie.setId(-1L);
+
+        movie = repository.merge(movie);
     }
 }
