@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
-	<appender name="STDOUT"
-		class="ch.qos.logback.core.ConsoleAppender">
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<pattern>
-				%d{HH:mm:ss} %-5level %logger{15}.%M %msg%n
-			</pattern>
+			<!--pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern-->
+			<pattern>%msg%n</pattern>
 		</encoder>
 	</appender>
 
+	<root level="debug">
+		<appender-ref ref="STDOUT"/>
+	</root>
 
-	<!--logger name="org.springframework.orm.jpa.JpaTransactionManager" level="DEBUG"/-->
+	<!--
 	<logger name="org.hibernate.internal.SessionImpl" level="TRACE"/>
 
-	<!--logger name="org.hibernate.SQL" level="DEBUG" /-->
-	<!--logger name="org.hibernate.type.descriptor.sql" level="TRACE" /-->
-
-	<!--logger name="com.ep.Hibernate4All.repository.MovieRepository" level="TRACE"/-->
-
-	<!-- Hibernate after 6 -->
 	<logger name="org.hibernate.SQL" level="debug" additivity="false">
 		<appender-ref ref="STDOUT"/>
 	</logger>
@@ -39,5 +33,6 @@
 	<root level="WARN">
 		<appender-ref ref="STDOUT" />
 	</root>
+	-->
 
 </configuration>

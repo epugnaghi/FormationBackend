@@ -4,10 +4,9 @@ import com.ep.Hibernate4All.config.PersistenceConfig;
 import com.ep.Hibernate4All.domain.Movie;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.platform.commons.logging.Logger;
-import org.junit.platform.commons.logging.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.ansi.Ansi8BitColor;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
@@ -20,9 +19,9 @@ import java.util.List;
 @ContextConfiguration(classes = {PersistenceConfig.class})
 @SqlConfig(dataSource = "dataSourceH2", transactionManager = "transactionManager")
 @Sql({"/data/data-test.sql"})
-//@Sql(scripts={"classpath:data-test.sql"})
 public class MovieRepositoryTest
 {
+    private static final Logger logger = LoggerFactory.getLogger(MovieRepository.class);
 
     @Autowired
     private MovieRepository repository;
@@ -30,14 +29,13 @@ public class MovieRepositoryTest
     @Test
     public void save_casNominal()
     {
-        System.out.println("MovieRepositoryTest/save_casNominal");
+        logger.debug("MovieRepositoryTest/save_casNominal");
+
 
         Movie movie = new Movie();
         movie.setName("inception");
 
         repository.persist(movie);
-
-        System.out.println("MovieRepositoryTest/save_casNominal");
     }
 
     @Test
@@ -45,7 +43,7 @@ public class MovieRepositoryTest
     {
         Movie movie = repository.find(-2L);
 
-        System.out.println("Name : " + movie.getName());
+        logger.debug("Name : {}", movie.getName());
     }
 
     @Test
@@ -55,12 +53,12 @@ public class MovieRepositoryTest
 
         if(list != null)
         {
-            System.out.println("Stream : ");
-            list.forEach((n) -> System.out.println("Name : " + n.getName()));
+            logger.debug("Stream : ");
+            list.forEach((movie) -> logger.debug("Name : {}", movie.getName()));
 
-            System.out.println("Classic : ");
+            logger.debug("Classic : ");
             for (Movie movie : list) {
-                System.out.println("Name : " + movie.getName());
+                logger.debug("Name : {}", movie.getName());
             }
         }
     }

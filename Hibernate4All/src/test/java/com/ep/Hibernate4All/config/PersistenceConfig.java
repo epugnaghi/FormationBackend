@@ -24,7 +24,7 @@ public class PersistenceConfig
     {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSourceH2());
-        em.setPackagesToScan(new String[]{"com.ep.Hibernate4All"});
+        em.setPackagesToScan("com.ep.Hibernate4All");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
@@ -45,6 +45,7 @@ public class PersistenceConfig
         return dataSource;
     }
 
+
     @Bean
     public PlatformTransactionManager transactionManager()
     {
@@ -53,6 +54,7 @@ public class PersistenceConfig
 
         return transactionManager;
     }
+
 
     private Properties additionalProperties()
     {
