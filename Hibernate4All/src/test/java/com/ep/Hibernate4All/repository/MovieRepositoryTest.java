@@ -27,6 +27,15 @@ public class MovieRepositoryTest
     private MovieRepository repository;
 
     @Test
+    public void testSuite()
+    {
+//        testSave();
+//        testFind();
+//        testFindAll();
+        testMerge();
+    }
+
+    //    @Test
     public void testSave()
     {
         logger.warn("TEST : SAVE");
@@ -38,7 +47,7 @@ public class MovieRepositoryTest
         repository.persist(movie);
     }
 
-    @Test
+    //    @Test
     public void testFind()
     {
         logger.warn("TEST : FIND");
@@ -48,7 +57,7 @@ public class MovieRepositoryTest
         logger.warn("Name : {}", movie.getName());
     }
 
-    @Test
+    //    @Test
     public void testFindAll()
     {
         logger.warn("TEST : FIND ALL");
@@ -67,13 +76,13 @@ public class MovieRepositoryTest
         }
     }
 
-    @Test
+    //    @Test
     public void testMerge()
     {
         logger.warn("TEST : MERGE");
 
         Movie movie = new Movie();
-        movie.setName("inception");
+        movie.setName("inception2");
         movie.setId(-1L);
 
         movie = repository.merge(movie);
