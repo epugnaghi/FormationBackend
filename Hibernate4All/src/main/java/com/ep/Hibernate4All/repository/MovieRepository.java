@@ -77,4 +77,14 @@ public class MovieRepository
 
         return movie;
     }
+
+    @Transactional
+    public void flush(Movie movie)
+    {
+        logger.warn("MovieRepository-flush");
+
+        entityManager.persist(movie);
+        entityManager.flush();
+
+    }
 }

@@ -35,6 +35,8 @@ public class MovieRepositoryTest
         testMerge();
         testRemove();
         testReference();
+        testReference2();
+        testFlush();
     }
 
     //    @Test
@@ -111,5 +113,25 @@ public class MovieRepositoryTest
         logger.warn("movie : " + movie.getName());
 
 //        assert movieMerge.getName().compareTo("inception2")==0;
+    }
+
+    public void testReference2()
+    {
+        logger.warn("TEST : GET REFERENCE 2");
+
+        Movie movie = repository.getReference(-1L);
+
+        logger.warn("movie : " + movie.getName());
+    }
+
+    public void testFlush()
+    {
+        logger.warn("TEST : FLUSH");
+
+
+        Movie movie = new Movie();
+        movie.setName("inception");
+
+        repository.flush(movie);
     }
 }
