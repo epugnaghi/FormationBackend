@@ -1,6 +1,6 @@
 package com.ep.Hibernate4All.repository;
 
-import com.ep.Hibernate4All.config.PersistenceConfig;
+import com.ep.Hibernate4All.config.PersistenceConfigTest;
 import com.ep.Hibernate4All.domain.Movie;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,7 +16,7 @@ import java.util.List;
 
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {PersistenceConfig.class})
+@ContextConfiguration(classes = {PersistenceConfigTest.class})
 @SqlConfig(dataSource = "dataSourceH2", transactionManager = "transactionManager")
 @Sql({"/data/data-test.sql"})
 public class MovieRepositoryTest

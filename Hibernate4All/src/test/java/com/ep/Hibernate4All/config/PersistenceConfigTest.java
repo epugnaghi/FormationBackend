@@ -17,7 +17,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan(basePackages = {"com.ep.Hibernate4All"})
-public class PersistenceConfig
+public class PersistenceConfigTest
 {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory()
