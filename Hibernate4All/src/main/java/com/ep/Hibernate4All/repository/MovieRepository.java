@@ -52,6 +52,19 @@ public class MovieRepository
     public Movie merge(Movie movie)
     {
         logger.warn("MovieRepository-merge");
+
+        entityManager.merge(movie);
+
+        Movie movie2 = entityManager.find(Movie.class, movie.getId());
+        return movie2;
+    }
+
+    @Transactional
+    public Movie merge2(Movie movie)
+    {
+        logger.warn("MovieRepository-merge");
+
+        Movie movie2 = entityManager.find(Movie.class, movie.getId());
         return entityManager.merge(movie);
     }
 
@@ -60,6 +73,9 @@ public class MovieRepository
     {
         logger.warn("MovieRepository-remove");
         Movie movie = entityManager.find(Movie.class, id);
+
+        Movie movie2 = entityManager.find(Movie.class, id);
+        Movie movie3 = entityManager.find(Movie.class, id);
 
         entityManager.remove(movie);
     }
