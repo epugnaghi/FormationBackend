@@ -100,8 +100,6 @@ public class MovieRepositoryTest
         logger.warn("TEST : REMOVE");
 
         repository.remove(-2L);
-
-//        assert movieMerge.getName().compareTo("inception2")==0;
     }
 
     public void testReference()
@@ -111,8 +109,6 @@ public class MovieRepositoryTest
         Movie movie = repository.getReference(-1L);
 
         logger.warn("movie : " + movie.getName());
-
-//        assert movieMerge.getName().compareTo("inception2")==0;
     }
 
     public void testReference2()
