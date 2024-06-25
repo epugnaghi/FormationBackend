@@ -18,4 +18,16 @@ public class MovieService
         Movie movie = repository.find(id);
         movie.setDescription(description);
     }
+
+    public Movie create(Movie movie)
+    {
+        repository.persist(movie);
+
+        return movie;
+    }
+
+    public Movie get(Long id)
+    {
+        return repository.find(id);
+    }
 }
