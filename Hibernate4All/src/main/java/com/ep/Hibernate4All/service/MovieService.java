@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 public class MovieService
 {
@@ -29,5 +31,15 @@ public class MovieService
     public Movie get(Long id)
     {
         return repository.find(id);
+    }
+
+    public Optional<Movie> update(Movie movie)
+    {
+        return repository.update(movie);
+    }
+
+    public boolean remove(Long id)
+    {
+        return repository.remove(id);
     }
 }

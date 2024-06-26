@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class MovieRepository
@@ -62,28 +63,35 @@ public class MovieRepository
     @Transactional
     public Movie merge2(Movie movie)
     {
-        logger.warn("MovieRepository-merge");
+//        logger.warn("MovieRepository-merge");
 
         Movie movie2 = entityManager.find(Movie.class, movie.getId());
         return entityManager.merge(movie);
     }
 
     @Transactional
-    public void remove(Long id)
+    public boolean remove(Long id)
     {
-        logger.warn("MovieRepository-remove");
-        Movie movie = entityManager.find(Movie.class, id);
+        boolean result = false;
 
-        Movie movie2 = entityManager.find(Movie.class, id);
-        Movie movie3 = entityManager.find(Movie.class, id);
+        if (id != null)
+        {
+            Movie movie = entityManager.find(Movie.class, id);
 
-        entityManager.remove(movie);
+            if (movie != null)
+            {
+                entityManager.remove(movie);
+                result = true;
+            }
+        }
+
+        return result;
     }
 
     @Transactional
     public Movie getReference(Long id)
     {
-        logger.warn("MovieRepository-getReference");
+//        logger.warn("MovieRepository-getReference");
 
         Movie movie = null;
         movie = entityManager.getReference(Movie.class, id);
@@ -102,5 +110,22 @@ public class MovieRepository
         entityManager.persist(movie);
         entityManager.flush();
 
+    }
+
+    @Transactional
+    public Optional<Movie> update(Movie movie)
+    {
+        if (movie.getId() == null)
+            return Optional.empty();
+
+        Movie movieDB = entityManager.find(Movie.class, movie.getId());
+
+        if (movieDB != null)
+        {
+            movieDB.setDescription(movie.getDescription());
+            movieDB.setName(movie.getName());
+        }
+
+        return Optional.ofNullable(movieDB);
     }
 }

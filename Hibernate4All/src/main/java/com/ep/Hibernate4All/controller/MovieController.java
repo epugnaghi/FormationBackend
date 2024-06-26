@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/movie")
 public class MovieController
@@ -34,5 +36,26 @@ public class MovieController
             return ResponseEntity.ok(movie);
         else
             return ResponseEntity.notFound().build();
+    }
+
+    @PutMapping("/")
+    public ResponseEntity<Movie> update(@RequestBody Movie movie)
+    {
+        Optional<Movie> result = service.update(movie);
+
+        if (result.isEmpty())
+            return ResponseEntity.notFound().build();
+        else
+            return ResponseEntity.ok(result.get());
+
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Movie> delete(@PathVariable("id") Long id)
+    {
+        boolean removed = service.remove(id);
+
+        return removed ? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
+
     }
 }
