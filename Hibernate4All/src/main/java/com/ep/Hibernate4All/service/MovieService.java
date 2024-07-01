@@ -33,6 +33,11 @@ public class MovieService
         return repository.find(id);
     }
 
+    public Movie getReference(Long id)
+    {
+        return repository.getReference(id);
+    }
+
     public Optional<Movie> update(Movie movie)
     {
         return repository.update(movie);

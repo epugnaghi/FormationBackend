@@ -91,8 +91,6 @@ public class MovieRepository
     @Transactional
     public Movie getReference(Long id)
     {
-//        logger.warn("MovieRepository-getReference");
-
         Movie movie = null;
         movie = entityManager.getReference(Movie.class, id);
 

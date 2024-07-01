@@ -32,6 +32,8 @@ public class MovieController
     {
         Movie movie = service.get(id);
 
+//        Movie movie = (Movie) Hibernate.unproxy(proxy);//service.get(id);
+
         if (movie != null)
             return ResponseEntity.ok(movie);
         else
