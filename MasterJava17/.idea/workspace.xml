@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" />
+    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java">
+      <change beforePath="$PROJECT_DIR$/../MasterJava/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +46,8 @@
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "SDKs",
+    "last_opened_file_path": "E:/Etienne/FormationBackend/MasterJava17",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
