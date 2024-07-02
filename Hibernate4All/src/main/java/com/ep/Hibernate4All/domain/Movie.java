@@ -13,9 +13,11 @@ public class Movie
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
-
-
     private String description;
+
+    public Movie()
+    {
+    }
 
     public Long getId()
     {

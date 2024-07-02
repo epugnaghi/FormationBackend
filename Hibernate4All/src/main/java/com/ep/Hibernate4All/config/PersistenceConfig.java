@@ -59,9 +59,9 @@ public class PersistenceConfig
     private Properties additionalProperties()
     {
         Properties properties = new Properties();
-//        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-        properties.setProperty("hibernate.hbm2ddl.auto", "none");
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+//        properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");  //pour repartir de 0 - utile pendant le dev
+        properties.setProperty("hibernate.hbm2ddl.auto", "update");   //utiliser update en production
+//        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         return properties;
     }
 }
