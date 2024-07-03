@@ -1,15 +1,26 @@
 package com.ep.Hibernate4All;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+//@SpringBootTest
 class AppTest_Hibernate4All
 {
-	@Test
-	void contextLoads()
-	{
-		System.out.println("AppTest_Hibernate4All/contextLoads");
-	}
+    public static void main(String[] args)
+    {
+//        SpringApplication.run(AppHibernate4All.class, args);
+
+//        MovieRepositoryTest repo = new MovieRepositoryTest();
+//
+//        repo.testSuite();
+    }
+
+    //@Test
+//    void contextLoads()
+//    {
+//        System.out.println("AppTest_Hibernate4All/contextLoads");
+//
+//
+//        MovieRepositoryTest repo = new MovieRepositoryTest();
+//
+//        repo.testSuite();
+//    }
 
 }
