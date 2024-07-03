@@ -9,11 +9,12 @@
         </encoder>
     </appender>
 
-    <root level="WARN">
+    <root level="warn">
         <appender-ref ref="STDOUT"/>
     </root>
 
     <logger name="org.hibernate.internal.SessionImpl" level="trace"/>
+    <logger name="org.hibernate.event.internal.DefaultAutoFlushEventListener" level="trace"/>
 
     <logger name="org.hibernate.SQL" level="debug" additivity="false">
         <appender-ref ref="STDOUT"/>
