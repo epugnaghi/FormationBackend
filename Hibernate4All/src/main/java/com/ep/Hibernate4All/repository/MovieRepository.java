@@ -25,7 +25,7 @@ public class MovieRepository
         logger.warn("MovieRepository-persist");
 
         entityManager.persist(movie);
-        logger.warn("persist-entityManager.contains : " + entityManager.contains(movie));
+        logger.warn("persist-entityManager.contains : {}", entityManager.contains(movie));
 
         //entityManager.detach(movie);
         //logger.warn("detach-persist-entityManager.contains : " + entityManager.contains(movie));
@@ -37,7 +37,7 @@ public class MovieRepository
         logger.warn("MovieRepository-find");
         Movie result = entityManager.find(Movie.class, id);
 
-        logger.warn("find/entityManager.contains : " + entityManager.contains(result));
+        logger.warn("find/entityManager.contains : {}", entityManager.contains(result));
 
         return result;
     }
@@ -59,14 +59,17 @@ public class MovieRepository
         return entityManager.find(Movie.class, movie.getId());
     }
 
-//    @Transactional
-//    public Movie merge2(Movie movie)
-//    {
-////        logger.warn("MovieRepository-merge");
-//
-//        Movie movie2 = entityManager.find(Movie.class, movie.getId());
-//        return entityManager.merge(movie);
-//    }
+    /*
+    @Transactional
+    public Movie merge2(Movie movie)
+    {
+//        logger.warn("MovieRepository-merge");
+
+        Movie movie2 = entityManager.find(Movie.class, movie.getId());
+        return entityManager.merge(movie);
+    }
+
+     */
 
     @Transactional
     public boolean remove(Long id)
@@ -90,11 +93,11 @@ public class MovieRepository
     @Transactional
     public Movie getReference(Long id)
     {
-        Movie movie = null;
+        Movie movie;
         movie = entityManager.getReference(Movie.class, id);
 
         if (movie != null)
-            logger.warn("Movie : " + movie.getName());
+            logger.warn("Movie : {}", movie.getName());
 
         return movie;
     }

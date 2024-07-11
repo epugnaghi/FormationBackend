@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad174304-fc22-4cf8-a1b9-ba96254ad684" name="Changes" comment="Merge branch 'main' of https://github.com/epugnaghi/FormationBackend" />
+    <list default="true" id="ad174304-fc22-4cf8-a1b9-ba96254ad684" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
@@ -27,23 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AppTest_Hibernate4All.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Hibernate4All [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Hibernate4All [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Hibernate4All [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Etienne/FormationBackend/MasterJava17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AppTest_Hibernate4All.executor": "Run",
+    "JUnit.MovieRepositoryTest.executor": "Run",
+    "Maven.Hibernate4All [clean].executor": "Run",
+    "Maven.Hibernate4All [compile].executor": "Run",
+    "Maven.Hibernate4All [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Etienne/FormationBackend/MasterJava17",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Etienne\FormationBackend\Hibernate4All\src\main\resources" />
@@ -165,13 +170,30 @@
       <option name="project" value="LOCAL" />
       <updated>1720734562410</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/main'">
+      <option name="closed" value="true" />
+      <created>1720734863346</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720734863346</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/main'">
+      <option name="closed" value="true" />
+      <created>1720734943077</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720734943077</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
     <MESSAGE value="Merge branch 'main' of https://github.com/epugnaghi/FormationBackend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/epugnaghi/FormationBackend" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
   </component>
 </project>
