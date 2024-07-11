@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java">
-      <change beforePath="$PROJECT_DIR$/../MasterJava/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;epugnaghi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/epugnaghi/FormationBackend.git&quot;,
+    &quot;accountId&quot;: &quot;9615e06a-2d8e-4ddf-8c8c-b2b98bb7fdfd&quot;
+  }
+}</component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -36,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppMasterJava17.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.MasterJava17 [clean].executor": "Run",
-    "Maven.MasterJava17 [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Etienne/FormationBackend/MasterJava17",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppMasterJava17.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MasterJava17 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MasterJava17 [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Etienne/FormationBackend/MasterJava17&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AppMasterJava17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ep.AppMasterJava17" />
