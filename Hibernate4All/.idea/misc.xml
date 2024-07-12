@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="MaterialThemeProjectNewConfig">
-    <option name="metadata">
-      <MTProjectMetadataState>
-        <option name="userId" value="42896d2a:18f0516b4bc:-7ffa" />
-      </MTProjectMetadataState>
-    </option>
+  <component name="EntryPointsManager">
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="org.springframework.context.annotation.Bean" />
+      <item index="1" class="java.lang.String" itemvalue="org.springframework.context.annotation.ComponentScan" />
+    </list>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
