@@ -1,6 +1,7 @@
 package com.ep.Hibernate4All.repository;
 
 import com.ep.Hibernate4All.config.PersistenceConfigTest;
+import com.ep.Hibernate4All.domain.Certification;
 import com.ep.Hibernate4All.domain.Movie;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -47,6 +48,7 @@ public class MovieRepositoryTest
 
         Movie movie = new Movie();
         movie.setName("inception");
+        movie.setCertification(Certification.NOT_UNDER_16);
 
         repository.persist(movie);
     }
@@ -59,6 +61,7 @@ public class MovieRepositoryTest
         Movie movie = repository.find(-2L);
 
         logger.warn("Name : {}", movie.getName());
+        logger.warn("Certification : {}", movie.getCertification());
     }
 
     //    @Test
@@ -126,7 +129,7 @@ public class MovieRepositoryTest
 
 
         Movie movie = new Movie();
-        movie.setName("inception");
+        movie.setName("inception2");
 
         repository.flush(movie);
     }
