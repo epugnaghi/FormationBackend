@@ -18,7 +18,6 @@ public class MovieController
     @Autowired
     private MovieService service;
 
-
     @PostMapping("/")
     public Movie create(@RequestBody Movie movie)
     {
