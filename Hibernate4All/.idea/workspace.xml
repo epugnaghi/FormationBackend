@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad174304-fc22-4cf8-a1b9-ba96254ad684" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/converter/CertificationAttributeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/domain/Certification.java" afterDir="false" />
+    <list default="true" id="ad174304-fc22-4cf8-a1b9-ba96254ad684" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/../MBO/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MBO/src/main/java/com/ep/AppGasolineCost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/config/PersistenceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/config/PersistenceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/Hibernate4All/domain/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/data-test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/data-test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ep/Hibernate4All/config/PersistenceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ep/Hibernate4All/config/PersistenceConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ep/Hibernate4All/repository/MovieRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ep/Hibernate4All/repository/MovieRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MBO/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MBO/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MBO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MBO/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.AppTest_Hibernate4All.executor": "Run",
-    "JUnit.MovieRepositoryTest.executor": "Run",
+    "JUnit.MovieRepositoryTest.executor": "Debug",
     "JUnit.MovieServiceTest.executor": "Run",
     "Maven.Hibernate4All [clean].executor": "Run",
     "Maven.Hibernate4All [compile].executor": "Run",
@@ -81,7 +78,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Errors"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -277,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720774563126</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1720783158735</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720783158735</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,9 +303,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/misc.xml&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/.idea/workspace.xml" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
