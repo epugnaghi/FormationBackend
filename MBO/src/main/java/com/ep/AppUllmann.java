@@ -1,13 +1,18 @@
-public class Ullmann {
-	
-	public static int SIZE_MAX_TABLE = 5;
+package com.ep;
 
-	public static void main(String[] args) {
-		
-		generateSpiral();
-	}
-	
-	public static void generateSpiral() {
+public class AppUllmann
+{
+
+    public static int SIZE_MAX_TABLE = 10;
+
+    public static void main(String[] args)
+    {
+
+        generateSpiral();
+    }
+
+    public static void generateSpiral()
+    {
         int size = SIZE_MAX_TABLE;
         int[][] table = new int[size][size];
 
@@ -15,19 +20,23 @@ public class Ullmann {
         int y = 0;
 
         int direction = 0; // Direction initiale (droite)
-        int[] dx = { 1, 0, -1, 0 }; // Déplacement en x
-        int[] dy = { 0, 1, 0, -1 }; // Déplacement en y
+        int[] dx = {1, 0, -1, 0}; // Déplacement en x
+        int[] dy = {0, 1, 0, -1}; // Déplacement en y
 
-        for (int i = 1; i <= size * size; i++) {
+        for (int i = 1; i <= size * size; i++)
+        {
             table[y][x] = i;
 
             int nextX = x + dx[direction];
             int nextY = y + dy[direction];
 
-            if (nextX >= 0 && nextX < size && nextY >= 0 && nextY < size && table[nextY][nextX] == 0) {
+            if (nextX >= 0 && nextX < size && nextY >= 0 && nextY < size && table[nextY][nextX] == 0)
+            {
                 x = nextX;
                 y = nextY;
-            } else {
+            }
+            else
+            {
                 direction = (direction + 1) % 4;
                 x += dx[direction];
                 y += dy[direction];
@@ -35,8 +44,10 @@ public class Ullmann {
         }
 
         // Affichage de la table
-        for (int[] row : table) {
-            for (int value : row) {
+        for (int[] row : table)
+        {
+            for (int value : row)
+            {
                 System.out.printf("%3d ", value);
             }
             System.out.println();
