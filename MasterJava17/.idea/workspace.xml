@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java" />
+    <list default="true" id="728d70cd-9d58-41fa-aece-a8687ef004bf" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;Hibernate4All/src/main/java/com/ep/Hibernate4All/repository/MovieRepository.java">
+      <change beforePath="$PROJECT_DIR$/../MBO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MBO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
