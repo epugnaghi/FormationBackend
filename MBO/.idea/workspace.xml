@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed43adef-cff4-4074-8b03-c6897f31612d" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;Signed-off-by: Etienne Pugnaghi &lt;etienne.pugnaghi@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/../Hibernate4All/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibernate4All/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ep/AppUllmann.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ep/AppUllmann.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MasterJava17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MasterJava17/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,23 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppGasolineCost.executor": "Debug",
-    "Application.AppMBO.executor": "Run",
-    "Application.AppMBO_MaxArea.executor": "Run",
-    "Application.AppUllmann.executor": "Run",
-    "Application.Ullmann.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppGasolineCost.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.AppMBO.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AppMBO_MaxArea.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AppUllmann.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ullmann.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.AppUllmann">
     <configuration name="AppGasolineCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ep.AppGasolineCost" />
