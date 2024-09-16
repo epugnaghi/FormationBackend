@@ -7,7 +7,6 @@ public class AppUllmann
 
     public static void main(String[] args)
     {
-
         generateSpiral();
     }
 
